@@ -1,0 +1,24 @@
+{
+  "name": "sokoban",
+  "version": "1.0.0",
+  "description": "Sokoban ganre game",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "sehui",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4",
+    "yarn": "^1.7.0"
+  },
+  "dependencies": {}
+}
