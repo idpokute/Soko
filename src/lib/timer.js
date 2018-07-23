@@ -1,3 +1,4 @@
+
 // Timer to control FPS
 class GameTimer {
     constructor(callback, step = 1/120) {
