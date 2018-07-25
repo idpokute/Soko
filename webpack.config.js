@@ -7,9 +7,9 @@ module.exports = {
   mode: 'development',
 
   entry: {
-    app: './src/index.js'
+    app: './src/index.ts'
   },
-  devtool: 'inline-source-map', // it seems it's not working
+  devtool: 'inline-source-map',
   devServer: {
     port: 8000,
     inline: true,
@@ -27,12 +27,12 @@ module.exports = {
       // BrowserSync options
       {
         // browse to http://localhost:3000/ during development
-        host: 'localhost',
-        port: 8000,
+        // host: 'localhost',
+        // port: 8000,
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
-        proxy: 'http://localhost:3100/'
+        // proxy: 'http://localhost:3100/'
       },
       // plugin options
       {
@@ -52,6 +52,12 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
+        ]
+      },
+      {
+        test: /\.ts$/,
+        use: [
+          'ts-loader'
         ]
       }
     ]
